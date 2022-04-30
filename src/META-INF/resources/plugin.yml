@@ -1,0 +1,7 @@
+name: SuperMenu
+main: me.dmzz.supermenu.SuperMenu
+version: 1.1.0
+commands:
+  SuperMenu:
+    description: 'main command'
+

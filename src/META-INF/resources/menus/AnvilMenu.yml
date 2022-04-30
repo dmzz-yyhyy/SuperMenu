@@ -1,0 +1,25 @@
+MenuName: "A Test Menu" # 菜单名称
+MenuType: "AnvilMenu" # 菜单类型，目前只有"AnvilMenu"   必须
+
+PreventClose: false # 是否阻止玩家关闭菜单
+Text: "Please enter" # 输入框的默认内容
+
+LeftItem: # 左边物品的具体配置
+  ItemId: "PAPER" # 物品ID 可添加物品网址
+  ItemName: "A LeftItem" # 物品名称
+  Command: # 点击物品时执行的指令
+    - "say A test OnLeftInputClickCommand"
+
+RightItem: # 左边物品的具体配置
+  ItemId: "PAPER"
+  ItemName: "A RightItem"
+  Command:
+    - "say A test Command"
+    - "say A test OnRightInputClickCommand"
+
+Command:
+  OnClose: # 当玩家关闭菜单时执行的指令
+    - "say A test OnCloseCommand"
+  OnComplete: # 当玩家完成输入时执行的指令
+    - "say A test OnCompleteCommand"
+    - "say You enter '{text}'" # {text} 作为占位符，代表玩家输入的内容

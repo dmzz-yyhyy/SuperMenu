@@ -1,0 +1,6 @@
+MenuName: "A Test Menu" # 菜单名称
+MenuType: "ChestMenu" # 菜单类型，目前只有"AnvilMenu"和"ChestMenu"
+
+Item:
+  OneItem:
+    Name: "我是一个傻逼"
